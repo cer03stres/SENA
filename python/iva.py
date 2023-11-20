@@ -1,0 +1,7 @@
+print ("VALOR DEL IVA") 
+costo_producto= int (input ("Ingrese el costo del producto"))
+cantidad = int (input ("Ingrese cuantos articulos va a comprar"))
+total_sin_iva = int (costo_producto * cantidad)
+total_con_iva = int (total_sin_iva * 0.16)
+print ("El total sin iva es:", total_sin_iva )
+print ("El total con iva es:", total_con_iva + total_sin_iva)
