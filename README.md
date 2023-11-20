@@ -1,2 +1,2 @@
 # SENA
-Trabajos hechos en el SENA.
+Trabajos hechos en el SENA con Python.
