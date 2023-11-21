@@ -1,0 +1,103 @@
+[21:06] Franklin Alfredo Viasus Rios
+
+/*
+
+If Sencillo.
+
+ 
+
+if (condición) {
+
+  // Ejecutar código si la condición se cumple
+
+} else {
+
+  // Ejecutar código si la condición no se cumple
+
+}
+
+ 
+
+*/
+
+package if_sencillo;
+
+ 
+
+ 
+
+public class If_sencillo {
+
+ 
+
+    public static void main(String[] args) {
+
+       int numero = 100;
+
+ 
+
+       if (numero > 10) {
+
+
+         System.out.println("El número es mayor que 10");
+
+         }
+
+    }
+
+[21:09] Franklin Alfredo Viasus Rios
+
+/*
+
+If_Else
+
+ 
+
+if (condición) {
+
+  // Ejecutar código si la condición se cumple
+
+} else {
+
+  // Ejecutar código si la condición no se cumple
+
+}
+
+ 
+
+*/
+
+ 
+
+package if_else;
+
+ 
+
+public class If_else {
+
+ 
+
+    public static void main(String[] args) {
+
+        int numero = 15;
+
+ 
+
+        if (numero > 10) {
+
+         System.out.println("El número es mayor que 10");
+
+        } 
+
+        else {
+
+         System.out.println("El número es menor o igual a 10");
+
+        }   
+
+
+
+    }
+
+
+}
