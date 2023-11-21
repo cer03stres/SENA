@@ -50,5 +50,5 @@ elif numero_mes == 12:
  nombre_mes = 'Diciembre'
  dias = 31
  print("El nombre del mes es", nombre_mes, "y tiene", dias, 'dias')
-else:
+else
  print("Ingrese una opción correcta")
