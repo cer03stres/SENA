@@ -1,0 +1,25 @@
+'''
+Algoritmo que devuelve 
+la divisa de pesos 
+a dolares y euros
+'''
+
+
+print("Please write the value of Dollar")
+value_dollar = flot(input)
+
+print("Please write the value of Euro")
+value_Euro = flot(input)
+
+print("Please write the mount of pesos do you want chage")
+pesos = flot(input)
+
+Dolar = value_dollar / pesos
+Euro = value_Euro / pesos
+
+print("Dollars"), Dolar
+print("Euros"), Euro
+
+
+
+
