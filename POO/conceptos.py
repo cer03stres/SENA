@@ -58,7 +58,7 @@ class Coche():
 
 
  def obtener_info(self):
-     self.informacion['marca'] = input("Ingrese la marca")
+     self.informacion['marca'] = input("In grese la marca")
      self.informacion['modelo'] = input("Ingrese el modelo")
 
  def imprimir_datos(self):
