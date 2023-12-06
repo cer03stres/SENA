@@ -58,4 +58,4 @@ print (numeros)
 
 
 #Acceder a la lista 3 de la posicion 0 y dividirlo por la posicion 2
-lista3.append(lista3[0]/ lista3[2])
+#lista3.append(lista3[0]/ lista3[2])
