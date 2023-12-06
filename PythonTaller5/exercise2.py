@@ -18,6 +18,7 @@ class OperacionesLista:
         print("Lista ingresada:", self.lista)
         print("Suma Lista:", sum(self.lista))
         print("La longitud de la Lista es:", longitud_lista)
+        print("El promedio de la lista es: ", sum(self.lista) / len(self.lista))
 
 #Instancia
 operaciones = OperacionesLista()
