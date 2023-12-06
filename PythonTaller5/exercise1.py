@@ -15,7 +15,7 @@ class Calculadora():
 def Principal():
  #Instancia de la clase Calculadora
  calculadora = Calculadora()
- 
+
  print ("CALCULADORA DE OPERACIONES DE 2 NUMEROS")
  print ("seleccione una opción")
  print ("1 Suma")

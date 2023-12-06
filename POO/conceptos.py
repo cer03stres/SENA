@@ -28,6 +28,26 @@ atributos y tiene acciones llamadas métodos.
 un perro tiene atributos como nombre, edad, etc
 y tiene métodos como ladrar y correr.
 
+Metodo: Son acciones que un objeto puede
+tomar.
+
+Encapsulamiento: agrupar los datos y metodos en 1 sola unidad.
+herencia: capacidad que tiene una clase de heredar atributos de otra clase.
+
+Polimorfismo:
+
+ejemplo encapsulamiento.
+
+Class Perro{
+#Atributos
+ raza
+ color
+#Metodos
+ Ladrar = "Guau"
+ correr...
+}
+
 '''
+
 
 
