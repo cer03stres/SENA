@@ -5,7 +5,7 @@ class OperacionesLista:
     #Contador para que me acumule y me cuente los números que ingresaré a la lista
         self.contador = 0
 
-    def ingresar_lista(self):
+    def ingresar_lista (self):
         longitud_lista = int(input("Ingrese la longitud de la lista.  " ))
         for i in range (longitud_lista):
          lista_contador = float(input(f"Ingrese el número {i+1} en la nueva lista ") )
