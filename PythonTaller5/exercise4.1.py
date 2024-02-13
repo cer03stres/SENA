@@ -4,8 +4,6 @@ class LenguajeProgramacion:
         self.fecha_creacion = fecha_creacion
         self.creadores = creadores
         self.tipo = tipo
-        self.diccionario = {}
-        
 
     def crear_diccionario(self):
         return{
