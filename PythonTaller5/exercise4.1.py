@@ -20,8 +20,6 @@ class LenguajeProgramacion:
         for clave, valor in info.items():
             print(f"{clave}: {valor}")
 
-    def imprimir_diccionario(self):
-        return self.diccionario
 
         
         
