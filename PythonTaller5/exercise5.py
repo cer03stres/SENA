@@ -6,7 +6,7 @@ class JuegoDado:
         self.lanzamientos = 0
 
     def lanzamiento_dado(self):
-        #La función randint genera un número entero
+        #La función randint genera un número entero aleatorio
         resultado = random.randint(1, 6)
         self.resultados.append(resultado)
         self.lanzamientos += 1
