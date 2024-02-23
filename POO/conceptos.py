@@ -48,8 +48,9 @@ Class Perro{
 }
 
 '''
-
-
+#Composinión, contener 1 o mas instancias de otros objetos como si fueran atributos, meter clases dentro de otras clases
+#Herencia, heredar varios atributos de otras clases
+#Herencia multiple "                " muchas clases  
 
 class Coche():
  #init metodo principal
@@ -58,7 +59,7 @@ class Coche():
 
 
  def obtener_info(self):
-     self.informacion['marca'] = input("In grese la marca")
+     self.informacion['marca'] = input("Ingrese la marca")
      self.informacion['modelo'] = input("Ingrese el modelo")
 
  def imprimir_datos(self):
@@ -81,3 +82,53 @@ coche.imprimir_datos()
 print("La información del coche es:",  imprimir_diccionario)
 
 #Pas es para que no mande nada todavia
+
+#Ejemplo de Composoción
+
+class Motor:
+  def __init__(self, tipo):
+    self.tipo = tipo
+
+  def arrancar(self):
+    print("El modo de tipo", self.tipo, "ha arrancado")
+
+class Automovil:
+  def __init__(self, marca, modelo, motor):
+    self.marca = marca
+    self.modelo = modelo
+    self.motor = motor
+
+  def encender(self):
+    print("Encendido el autómovil", self.marca, self.modelo)
+    self.motor.arrancar()
+
+motor_coche = Motor("Gasolina")
+coche = Automovil("Toyota", "Corolla", motor_coche)
+coche.encender()
+
+#Ejemplo de Herencia Multiple
+class Animal():
+  def moverse(self):
+    print("El animal se está moviendo")
+
+class Volador():
+  def volar(self):
+    print("El animal está volando")
+
+class Ave(Animal, Volador):
+  def cantar(self):
+    print("El ave está cantando")
+
+#Instancia
+ave = Ave()
+
+#Invocando el método de la clase animal
+ave.moverse()
+
+#Accedemos al método de la clase Volador
+ave.volar()
+
+#Accedemos al método de la clase Ave
+ave.cantar()
+
+#Comentario
