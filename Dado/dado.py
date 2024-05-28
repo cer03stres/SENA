@@ -5,35 +5,51 @@ def Dado():
 
 datosJugadores = []
 
+
 def LeerJugadores():
-    numeroJugadores = int (input("Ingrese el número de los jugadores, recuerde que deben 2 o mas: "))
+    numeroJugadores = int (input("Ingrese el número de los jugadores, recuerde que debe ser entre 2 y 10 Jugadores: "))
 
    
 
-    if numeroJugadores >= 2:
-        monto = int (input("Ingrese el monto a apostar: "))
+    if numeroJugadores >= 2 and numeroJugadores <=10:
+        monto = int (input("Ingrese el monto de cada jugador: "))
         for i in range (numeroJugadores):
             
             NombreJugadores = input(f"Ingrese el nombre del jugador {i+1}: ")
 
             Jugadores = {f'Nombre del Jugador {i+1}': NombreJugadores, 'monto': monto, 'puntos': 0,
-                          'estado': 0, 'ronda': {i}}
+                          'estado': 0, 'ronda': 0}
 
             datosJugadores.append(Jugadores)
 
+           
+
+
         print(datosJugadores)
-    
+       
 
-    
     else:
-        print ("Error, debe ingresar 2 o mas jugadores")
+        print ("Error, debe ingresar entre 2 y 10 Jugadores")
 
 
-    
-    
+def Apuesta():
+    apuesta = int(input("Ingrese la apuesta que se va a hacer por ronda: "))
+    while apuesta <= 0:
+        print("Debe apostar un valor mayor a 0")
+        apuesta = int(input("Ingrese la apuesta que se va a hacer por ronda: "))
+    return apuesta
+
+
+def calcularPozo(apuesta, numeroJugadores):
+    pozo = apuesta*numeroJugadores
+
+#def Pozo():
+#    pozo = apuesta*numeroJugadores
+#        print ("El pozo es", pozo)
+       
+
+#Calcular Pozo , se define primero la apuesta
+
+
 LeerJugadores()
-
-
-
-    
-   
+bet = Apuesta()
