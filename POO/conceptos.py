@@ -45,7 +45,7 @@ Class Perro{
 #Metodos
  Ladrar = "Guau"
  correr...
-}
+}0.
 
 '''
 #Composinión, contener 1 o mas instancias de otros objetos como si fueran atributos, meter clases dentro de otras clases
