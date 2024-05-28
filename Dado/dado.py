@@ -40,12 +40,22 @@ def Apuesta():
     return apuesta
 
 
-def calcularPozo(apuesta, numeroJugadores):
-    pozo = apuesta*numeroJugadores
+def PagarApuesta(jugador,apuesta):
+    jugador['monto'] -= apuesta
+    return jugador
 
-#def Pozo():
-#    pozo = apuesta*numeroJugadores
-#        print ("El pozo es", pozo)
+def calcularPozo(apuesta, jugadores):
+    pozo = apuesta*len(jugadores)
+    print ("El pozo es", pozo)
+
+
+    for jugador in jugadores:
+        jugador = PagarApuesta(jugador,apuesta)
+    
+
+
+    return pozo
+
        
 
 #Calcular Pozo , se define primero la apuesta
@@ -53,3 +63,5 @@ def calcularPozo(apuesta, numeroJugadores):
 
 LeerJugadores()
 bet = Apuesta()
+calcularPozo(bet,datosJugadores)
+print(datosJugadores)
